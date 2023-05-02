@@ -41,6 +41,7 @@ router.post("/signup", async (req, res) => {
   } catch (err) {
     //TODO - Shows error to user
     res.status(404).send({message: "Internal Server Error"});
+    console.log(err);
   }
 });
 
